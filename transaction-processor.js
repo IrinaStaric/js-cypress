@@ -22,7 +22,6 @@ function processTransactions(transactions) {
     return result;
   }
   
-  // Run example
   const data = [
     { amount: 200, type: 'credit' },
     { amount: -50, type: 'debit' },

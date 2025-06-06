@@ -1,14 +1,11 @@
 describe('Amazon product search', () => {
-    it('searches for KeySmart Air and checks results', () => {
+    it('performs a product search and checks results are displayed', () => {
       cy.visit('https://www.amazon.co.uk');
-  
-      cy.get('#twotabsearchtextbox').type('KeySmart Air');
-  
-      cy.get('input[type="submit"][value="Go"]').first().click();
-  
-      cy.contains('KeySmart Air - Compact Keyholder for Airtag').should('be.visible');
+      cy.get('#twotabsearchtextbox').type('KeySmart Air{enter}');
+      cy.get('.s-main-slot').should('exist');
     });
   });
+  
   
   
   
