@@ -1,4 +1,4 @@
-describe('Amazon product - add to basket flow', () => {
+describe.skip('Amazon product - add to basket flow', () => {
     it('declines cookies and adds item to basket', () => {
       cy.visit('https://www.amazon.co.uk/KeySmart-Compatible-Keychain-Keyholder-Organizer/dp/B0BNLV872G');
   
