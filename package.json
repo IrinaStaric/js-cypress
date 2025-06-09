@@ -1,18 +1,22 @@
 {
   "name": "js-cypress",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run",
+    "posttest": "allure generate allure-results --clean -o allure-report && allure open allure-report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "allure-commandline": "^2.34.0",
     "cypress": "^14.4.1",
     "eslint": "^9.28.0",
     "mocha": "^11.5.0",
     "prettier": "^3.5.3"
   }
 }
+

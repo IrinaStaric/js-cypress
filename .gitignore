@@ -1,0 +1,15 @@
+# node modules
+node_modules/
+
+# Cypress test output
+cypress/screenshots/
+cypress/videos/
+
+# Allure and Mochawesome reports
+allure-results/
+allure-report/
+mochawesome-report/
+
+# OS generated files
+.DS_Store
+Thumbs.db
